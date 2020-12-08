@@ -8,6 +8,17 @@
 
 # [Watch the Code Review!](https://youtu.be/FMTb3Z-QiPY)
 
+# Docker Hub
+
+If you use image from Docker Hub, you must provide the following environment variables in order for it to work properly:
+
+- WEB_PORH - the port on which the app is exposed (defaults to 8000)
+- EMAIL_PORT - the SMTP port (defaults to 2525)
+- BASE_URL - the URL of the instance (defaults to 'http://localhost:8000')
+- EMAIL_DOMAIN - domain that will be used to generate mail addresses and URLs
+  (defaults to localhost)
+- ISSUE_REPORT - email to which all arised problems will be forwarded (should look like 'mailto:<your email>')
+
 # Deploy Your Own Instance (Self-Host)
 
 1. Create accounts on [GitHub](https://github.com), [Namecheap](https://www.namecheap.com), and [DigitalOcean](https://www.digitalocean.com).
